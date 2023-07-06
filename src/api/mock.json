@@ -1,0 +1,669 @@
+{
+  "feed": {
+    "author": {
+      "name": {
+        "label": "iTunes Store"
+      },
+      "uri": {
+        "label": "http://www.apple.com/itunes/"
+      }
+    },
+    "entry": [
+      {
+        "im:name": {
+          "label": "The Joe Budden Podcast"
+        },
+        "im:image": [
+          {
+            "label": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/55x55bb.png",
+            "attributes": {
+              "height": "55"
+            }
+          },
+          {
+            "label": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.png",
+            "attributes": {
+              "height": "60"
+            }
+          },
+          {
+            "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/170x170bb.png",
+            "attributes": {
+              "height": "170"
+            }
+          }
+        ],
+        "summary": {
+          "label": "Tune into Joe Budden and his friends. Follow along the crazy adventures of these very random friends."
+        },
+        "im:price": {
+          "label": "Get",
+          "attributes": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Podcast",
+            "label": "Podcast"
+          }
+        },
+        "rights": {
+          "label": "© All rights reserved"
+        },
+        "title": {
+          "label": "The Joe Budden Podcast - The Joe Budden Network"
+        },
+        "link": {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://podcasts.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?uo=2"
+          }
+        },
+        "id": {
+          "label": "https://podcasts.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?uo=2",
+          "attributes": {
+            "im:id": "1535809341"
+          }
+        },
+        "im:artist": {
+          "label": "The Joe Budden Network",
+          "attributes": {
+            "href": "https://podcasts.apple.com/us/artist/the-joe-budden-network/1535844019?uo=2"
+          }
+        },
+        "category": {
+          "attributes": {
+            "im:id": "1310",
+            "term": "Music",
+            "scheme": "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
+            "label": "Music"
+          }
+        },
+        "im:releaseDate": {
+          "label": "2023-07-01T00:00:00-07:00",
+          "attributes": {
+            "label": "July 1, 2023"
+          }
+        }
+      },
+      {
+        "im:name": {
+          "label": "Drink Champs"
+        },
+        "im:image": [
+          {
+            "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/1f/ad/c7/1fadc7d4-1e22-beaa-720a-2e2988dc1521/mza_16091018887573148747.jpg/55x55bb.png",
+            "attributes": {
+              "height": "55"
+            }
+          },
+          {
+            "label": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts126/v4/1f/ad/c7/1fadc7d4-1e22-beaa-720a-2e2988dc1521/mza_16091018887573148747.jpg/60x60bb.png",
+            "attributes": {
+              "height": "60"
+            }
+          },
+          {
+            "label": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/1f/ad/c7/1fadc7d4-1e22-beaa-720a-2e2988dc1521/mza_16091018887573148747.jpg/170x170bb.png",
+            "attributes": {
+              "height": "170"
+            }
+          }
+        ],
+        "summary": {
+          "label": "Legendary Queens rapper-turned show host N.O.R.E. teams up with Miami hip-hop pioneer DJ EFN for a night of boozy conversation and boisterous storytelling. The hosts and guests engage together in fun, light-hearted conversation - looking back at their paths to success, highlighting their lives, friendships, and iconic moments within their career. In this unfiltered series, drinks are flowing and jokes are rolling - take a seat at the table with N.O.R.E & EFN. You Gotta Relax!"
+        },
+        "im:price": {
+          "label": "Get",
+          "attributes": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Podcast",
+            "label": "Podcast"
+          }
+        },
+        "rights": {
+          "label": "© 2023 Interval Presents"
+        },
+        "title": {
+          "label": "Drink Champs - Interval Presents"
+        },
+        "link": {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://podcasts.apple.com/us/podcast/drink-champs/id1096830182?uo=2"
+          }
+        },
+        "id": {
+          "label": "https://podcasts.apple.com/us/podcast/drink-champs/id1096830182?uo=2",
+          "attributes": {
+            "im:id": "1096830182"
+          }
+        },
+        "im:artist": {
+          "label": "Interval Presents",
+          "attributes": {
+            "href": "https://podcasts.apple.com/us/artist/iheartradio/284341002?uo=2"
+          }
+        },
+        "category": {
+          "attributes": {
+            "im:id": "1310",
+            "term": "Music",
+            "scheme": "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
+            "label": "Music"
+          }
+        },
+        "im:releaseDate": {
+          "label": "2023-06-30T00:01:00-07:00",
+          "attributes": {
+            "label": "June 30, 2023"
+          }
+        }
+      },
+      {
+        "im:name": {
+          "label": "60 Songs That Explain the '90s"
+        },
+        "im:image": [
+          {
+            "label": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts112/v4/f4/53/be/f453be7f-2a34-0617-7bc1-bc57d9b747fc/mza_6548891788110664288.jpg/55x55bb.png",
+            "attributes": {
+              "height": "55"
+            }
+          },
+          {
+            "label": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts112/v4/f4/53/be/f453be7f-2a34-0617-7bc1-bc57d9b747fc/mza_6548891788110664288.jpg/60x60bb.png",
+            "attributes": {
+              "height": "60"
+            }
+          },
+          {
+            "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts112/v4/f4/53/be/f453be7f-2a34-0617-7bc1-bc57d9b747fc/mza_6548891788110664288.jpg/170x170bb.png",
+            "attributes": {
+              "height": "170"
+            }
+          }
+        ],
+        "summary": {
+          "label": "The 1990s were a turning point in music: with the increasingly connected world enabling an unprecedented coalescence of various styles and genres, the decade featured the rapid evolution of sonic artistry — and subsequently shaped the soundscape of eras that followed. Listen along as The Ringer’s preeminent music critic Rob Harvilla curates and explores 60 iconic songs from the ‘90s that define the decade."
+        },
+        "im:price": {
+          "label": "Get",
+          "attributes": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Podcast",
+            "label": "Podcast"
+          }
+        },
+        "rights": {
+          "label": "© All rights reserved."
+        },
+        "title": {
+          "label": "60 Songs That Explain the '90s - The Ringer"
+        },
+        "link": {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://podcasts.apple.com/us/podcast/60-songs-that-explain-the-90s/id1635211340?uo=2"
+          }
+        },
+        "id": {
+          "label": "https://podcasts.apple.com/us/podcast/60-songs-that-explain-the-90s/id1635211340?uo=2",
+          "attributes": {
+            "im:id": "1635211340"
+          }
+        },
+        "im:artist": {
+          "label": "The Ringer"
+        },
+        "category": {
+          "attributes": {
+            "im:id": "1310",
+            "term": "Music",
+            "scheme": "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
+            "label": "Music"
+          }
+        },
+        "im:releaseDate": {
+          "label": "2023-06-28T03:00:00-07:00",
+          "attributes": {
+            "label": "June 28, 2023"
+          }
+        }
+      },
+      {
+        "im:name": {
+          "label": "Song Exploder"
+        },
+        "im:image": [
+          {
+            "label": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts116/v4/30/1c/1f/301c1f05-639c-bb22-cfdd-4c71aca5761e/mza_3479668065976336868.png/55x55bb.png",
+            "attributes": {
+              "height": "55"
+            }
+          },
+          {
+            "label": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts116/v4/30/1c/1f/301c1f05-639c-bb22-cfdd-4c71aca5761e/mza_3479668065976336868.png/60x60bb.png",
+            "attributes": {
+              "height": "60"
+            }
+          },
+          {
+            "label": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts116/v4/30/1c/1f/301c1f05-639c-bb22-cfdd-4c71aca5761e/mza_3479668065976336868.png/170x170bb.png",
+            "attributes": {
+              "height": "170"
+            }
+          }
+        ],
+        "summary": {
+          "label": "Song Exploder is a podcast where musicians take apart their songs, and piece by piece, tell the story of how they were made. Each episode features an artist discussing a song of theirs, breaking down the sounds and ideas that went into the writing and recording. Hosted and produced by Hrishikesh Hirway."
+        },
+        "im:price": {
+          "label": "Get",
+          "attributes": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Podcast",
+            "label": "Podcast"
+          }
+        },
+        "rights": {
+          "label": "© Translucence"
+        },
+        "title": {
+          "label": "Song Exploder - Hrishikesh Hirway"
+        },
+        "link": {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://podcasts.apple.com/us/podcast/song-exploder/id788236947?uo=2"
+          }
+        },
+        "id": {
+          "label": "https://podcasts.apple.com/us/podcast/song-exploder/id788236947?uo=2",
+          "attributes": {
+            "im:id": "788236947"
+          }
+        },
+        "im:artist": {
+          "label": "Hrishikesh Hirway",
+          "attributes": {
+            "href": "https://podcasts.apple.com/us/artist/radiotopia/850139119?uo=2"
+          }
+        },
+        "category": {
+          "attributes": {
+            "im:id": "1310",
+            "term": "Music",
+            "scheme": "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
+            "label": "Music"
+          }
+        },
+        "im:releaseDate": {
+          "label": "2023-06-28T09:00:00-07:00",
+          "attributes": {
+            "label": "June 28, 2023"
+          }
+        }
+      },
+      {
+        "im:name": {
+          "label": "Friday Night Karaoke"
+        },
+        "im:image": [
+          {
+            "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/5b/88/a1/5b88a186-ce6a-5268-cc49-8e896c737729/mza_7354436562524572096.jpg/55x55bb.png",
+            "attributes": {
+              "height": "55"
+            }
+          },
+          {
+            "label": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts116/v4/5b/88/a1/5b88a186-ce6a-5268-cc49-8e896c737729/mza_7354436562524572096.jpg/60x60bb.png",
+            "attributes": {
+              "height": "60"
+            }
+          },
+          {
+            "label": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts116/v4/5b/88/a1/5b88a186-ce6a-5268-cc49-8e896c737729/mza_7354436562524572096.jpg/170x170bb.png",
+            "attributes": {
+              "height": "170"
+            }
+          }
+        ],
+        "summary": {
+          "label": "No ads, no gimmicks - just Karaoke! Friday Night Karaoke features amateur artists every week singing the songs they love, just for you! Get your weekly dose of vocal expression. Get featured on the podcast by joining the official Friday Night Karaoke Facebook group at https://www.facebook.com/groups/fridaynightkaraoke!"
+        },
+        "im:price": {
+          "label": "Get",
+          "attributes": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Podcast",
+            "label": "Podcast"
+          }
+        },
+        "rights": {
+          "label": "© Copyright Friday Night Karaoke"
+        },
+        "title": {
+          "label": "Friday Night Karaoke - Friday Night Karaoke"
+        },
+        "link": {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://podcasts.apple.com/us/podcast/friday-night-karaoke/id1574029840?uo=2"
+          }
+        },
+        "id": {
+          "label": "https://podcasts.apple.com/us/podcast/friday-night-karaoke/id1574029840?uo=2",
+          "attributes": {
+            "im:id": "1574029840"
+          }
+        },
+        "im:artist": {
+          "label": "Friday Night Karaoke"
+        },
+        "category": {
+          "attributes": {
+            "im:id": "1310",
+            "term": "Music",
+            "scheme": "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
+            "label": "Music"
+          }
+        },
+        "im:releaseDate": {
+          "label": "2023-07-03T13:40:00-07:00",
+          "attributes": {
+            "label": "July 3, 2023"
+          }
+        }
+      },
+      {
+        "im:name": {
+          "label": "\"See, The Thing Is...\""
+        },
+        "im:image": [
+          {
+            "label": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts112/v4/9f/fb/91/9ffb916a-af0d-0fb8-3646-57eeda5314c3/mza_945735870779170317.jpeg/55x55bb.png",
+            "attributes": {
+              "height": "55"
+            }
+          },
+          {
+            "label": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts112/v4/9f/fb/91/9ffb916a-af0d-0fb8-3646-57eeda5314c3/mza_945735870779170317.jpeg/60x60bb.png",
+            "attributes": {
+              "height": "60"
+            }
+          },
+          {
+            "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts112/v4/9f/fb/91/9ffb916a-af0d-0fb8-3646-57eeda5314c3/mza_945735870779170317.jpeg/170x170bb.png",
+            "attributes": {
+              "height": "170"
+            }
+          }
+        ],
+        "summary": {
+          "label": "Opinionated & informative with a taste of toxic: join Bridget Kelly & Mandii B every Tuesday for all things pop culture, music, and media through the minds of women."
+        },
+        "im:price": {
+          "label": "Get",
+          "attributes": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Podcast",
+            "label": "Podcast"
+          }
+        },
+        "rights": {
+          "label": "© 2022"
+        },
+        "title": {
+          "label": "\"See, The Thing Is...\" - All The Things Productions"
+        },
+        "link": {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://podcasts.apple.com/us/podcast/see-the-thing-is/id1534096260?uo=2"
+          }
+        },
+        "id": {
+          "label": "https://podcasts.apple.com/us/podcast/see-the-thing-is/id1534096260?uo=2",
+          "attributes": {
+            "im:id": "1534096260"
+          }
+        },
+        "im:artist": {
+          "label": "All The Things Productions"
+        },
+        "category": {
+          "attributes": {
+            "im:id": "1523",
+            "term": "Music Commentary",
+            "scheme": "https://podcasts.apple.com/us/genre/podcasts-music-music-commentary/id1523?uo=2",
+            "label": "Music Commentary"
+          }
+        },
+        "im:releaseDate": {
+          "label": "2023-07-04T00:00:00-07:00",
+          "attributes": {
+            "label": "July 4, 2023"
+          }
+        }
+      },
+      {
+        "im:name": {
+          "label": "A History of Rock Music in 500 Songs"
+        },
+        "im:image": [
+          {
+            "label": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts124/v4/88/18/59/881859a5-f344-c249-f4b9-3d9b62add05a/mza_16428964146354887078.png/55x55bb.png",
+            "attributes": {
+              "height": "55"
+            }
+          },
+          {
+            "label": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts124/v4/88/18/59/881859a5-f344-c249-f4b9-3d9b62add05a/mza_16428964146354887078.png/60x60bb.png",
+            "attributes": {
+              "height": "60"
+            }
+          },
+          {
+            "label": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts124/v4/88/18/59/881859a5-f344-c249-f4b9-3d9b62add05a/mza_16428964146354887078.png/170x170bb.png",
+            "attributes": {
+              "height": "170"
+            }
+          }
+        ],
+        "summary": {
+          "label": "Andrew Hickey presents a history of rock music from 1938 to 1999, looking at five hundred songs that shaped the genre."
+        },
+        "im:price": {
+          "label": "Get",
+          "attributes": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Podcast",
+            "label": "Podcast"
+          }
+        },
+        "rights": {
+          "label": "© 2021 A History of Rock Music in 500 Songs"
+        },
+        "title": {
+          "label": "A History of Rock Music in 500 Songs - Andrew Hickey"
+        },
+        "link": {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://podcasts.apple.com/us/podcast/a-history-of-rock-music-in-500-songs/id1437402802?uo=2"
+          }
+        },
+        "id": {
+          "label": "https://podcasts.apple.com/us/podcast/a-history-of-rock-music-in-500-songs/id1437402802?uo=2",
+          "attributes": {
+            "im:id": "1437402802"
+          }
+        },
+        "im:artist": {
+          "label": "Andrew Hickey"
+        },
+        "category": {
+          "attributes": {
+            "im:id": "1524",
+            "term": "Music History",
+            "scheme": "https://podcasts.apple.com/us/genre/podcasts-music-music-history/id1524?uo=2",
+            "label": "Music History"
+          }
+        },
+        "im:releaseDate": {
+          "label": "2023-07-02T15:00:00-07:00",
+          "attributes": {
+            "label": "July 2, 2023"
+          }
+        }
+      },
+      {
+        "im:name": {
+          "label": "DISGRACELAND"
+        },
+        "im:image": [
+          {
+            "label": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts123/v4/9b/56/5c/9b565c54-ffd7-be9d-ff96-be60e36ae59a/mza_14743797108223744429.jpeg/55x55bb.png",
+            "attributes": {
+              "height": "55"
+            }
+          },
+          {
+            "label": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts123/v4/9b/56/5c/9b565c54-ffd7-be9d-ff96-be60e36ae59a/mza_14743797108223744429.jpeg/60x60bb.png",
+            "attributes": {
+              "height": "60"
+            }
+          },
+          {
+            "label": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts123/v4/9b/56/5c/9b565c54-ffd7-be9d-ff96-be60e36ae59a/mza_14743797108223744429.jpeg/170x170bb.png",
+            "attributes": {
+              "height": "170"
+            }
+          }
+        ],
+        "summary": {
+          "label": "Disgraceland is the award winning music podcast hosted by Jake Brennan that explores the alleged true crime antics and criminal connections of musicians we love like Jerry Lee Lewis, the Rolling Stones, Taylor Swift, David Bowie, Cardi B, the Grateful Dead, Amy Winehouse, Bob Marley, and more. Disgraceland is a scripted, single voice narrative storytelling podcast that melds true crime, music history, mystery, and misadventure. Disgraceland is not a journalistic podcast. It is an entertainment podcast inspired by true events. Certain dialogue and scenes are sometimes fictionalized for dramatic purposes as they are in most scripted entertainment based on true events. Sources and credits for each episode are available at disgracelandpod.com. Full scripted episodes are released every Tuesday. Bonus “After Party” episodes are released every Thursday. Disgraceland is available wherever you get your podcasts."
+        },
+        "im:price": {
+          "label": "Get",
+          "attributes": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Podcast",
+            "label": "Podcast"
+          }
+        },
+        "rights": {
+          "label": "© Double Elvis"
+        },
+        "title": {
+          "label": "DISGRACELAND - Double Elvis"
+        },
+        "link": {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://podcasts.apple.com/us/podcast/disgraceland/id1275172907?uo=2"
+          }
+        },
+        "id": {
+          "label": "https://podcasts.apple.com/us/podcast/disgraceland/id1275172907?uo=2",
+          "attributes": {
+            "im:id": "1275172907"
+          }
+        },
+        "im:artist": {
+          "label": "Double Elvis"
+        },
+        "category": {
+          "attributes": {
+            "im:id": "1310",
+            "term": "Music",
+            "scheme": "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
+            "label": "Music"
+          }
+        },
+        "im:releaseDate": {
+          "label": "2023-07-04T00:07:00-07:00",
+          "attributes": {
+            "label": "July 4, 2023"
+          }
+        }
+      }
+    ],
+    "updated": {
+      "label": "2023-07-05T10:21:39-07:00"
+    },
+    "rights": {
+      "label": "Copyright 2008 Apple Inc."
+    },
+    "title": {
+      "label": "iTunes Store: Top Podcasts in Music"
+    },
+    "icon": {
+      "label": "http://itunes.apple.com/favicon.ico"
+    },
+    "link": [
+      {
+        "attributes": {
+          "rel": "alternate",
+          "type": "text/html",
+          "href": "https://podcasts.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=us&id=179537&popId=3"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "self",
+          "href": "https://mzstoreservices-int-st.itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json"
+        }
+      }
+    ],
+    "id": {
+      "label": "https://mzstoreservices-int-st.itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json"
+    }
+  }
+}
