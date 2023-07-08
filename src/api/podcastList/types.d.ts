@@ -35,6 +35,11 @@ export const LinkSchema = z.object({
 });
 export type Link = z.infer<typeof LinkSchema>;
 
+export const IconSchema = z.object({
+  label: z.string(),
+});
+export type Icon = z.infer<typeof IconSchema>;
+
 export const ImReleaseDateSchema = z.object({
   label: z.string(),
   attributes: IconSchema,
@@ -127,11 +132,6 @@ export const EntrySchema = z.object({
   "im:releaseDate": ImReleaseDateSchema,
 });
 export type Entry = z.infer<typeof EntrySchema>;
-
-export const IconSchema = z.object({
-  label: z.string(),
-});
-export type Icon = z.infer<typeof IconSchema>;
 
 export const AuthorSchema = z.object({
   name: IconSchema,

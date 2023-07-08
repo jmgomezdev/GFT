@@ -1,0 +1,29 @@
+.section {
+  @apply flex w-full flex-col gap-8;
+}
+
+.card {
+  @apply w-full;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.title {
+  @apply p-4 text-2xl font-bold;
+}
+
+.table {
+  @apply relative w-full px-4 text-left text-sm text-gray-500;
+}
+.table thead {
+  @apply sticky top-0 bg-gray-50 text-xs uppercase text-gray-700;
+}
+.table tr {
+  @apply border-b;
+}
+.table th {
+  @apply p-4 font-semibold;
+}
+.table td {
+  @apply px-4 py-3;
+}

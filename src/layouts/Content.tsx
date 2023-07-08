@@ -1,10 +1,10 @@
-import Router from "@/Router";
 import Loading from "@/components/loading/Loading";
+import Router from "@/Router";
 import { Suspense } from "react";
 
 export default function Content() {
   return (
-    <main className="flex-1 bg-background font-sans antialiased">
+    <main className="container pb-8 pt-6 font-sans antialiased md:py-10">
       <Suspense fallback={<Loading />}>
         <Router />
       </Suspense>

@@ -1,0 +1,15 @@
+.card {
+  @apply w-full p-4;
+}
+
+.title {
+  @apply text-2xl font-bold;
+}
+
+.description {
+  @apply text-sm font-light leading-loose md:leading-relaxed  lg:text-base;
+}
+
+.audio {
+  width: 100%;
+}

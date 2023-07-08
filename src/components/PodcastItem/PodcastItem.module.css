@@ -1,0 +1,39 @@
+.card {
+  @apply transition-all;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  min-height: 180px;
+  position: relative;
+  text-align: center;
+  width: 250px;
+}
+
+.card:hover {
+  @apply scale-105;
+}
+
+.card img {
+  @apply rounded-full drop-shadow;
+  aspect-ratio: 1/1;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  object-fit: cover;
+  overflow: hidden;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.card h3 {
+  @apply text-xl font-bold;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.card span {
+  @apply font-medium leading-none;
+}

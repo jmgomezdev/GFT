@@ -1,0 +1,3 @@
+.badge {
+  @apply ml-2 rounded-lg bg-sky-700 px-2 text-lg font-bold text-gray-100;
+}

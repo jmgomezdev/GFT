@@ -1,3 +1,9 @@
+import { Menu } from "@/components/Menu";
+
 export default function Header() {
-  return <div>Header</div>;
+  return (
+    <header className="flex h-14 items-center justify-center shadow">
+      <Menu />
+    </header>
+  );
 }
