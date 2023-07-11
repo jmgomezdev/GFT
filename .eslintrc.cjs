@@ -161,5 +161,6 @@ module.exports = {
         ignore: [],
       },
     ],
+    "jsx-a11y/media-has-caption": "warn",
   },
 };
