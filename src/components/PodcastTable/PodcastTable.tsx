@@ -1,23 +1,13 @@
-import { cn } from "@/lib/utils";
+import { Result } from "@/api/podcastDetail/types";
+import { cn, dateFormatter, timeFormatter } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import styles from "./PodcastTable.module.css";
 
-interface PodcastTableProps {
-  id: number;
-  title: string;
-  date: string;
-  duration: string;
-}
-
-export default function PodcastTable({
-  podcasts,
-}: {
-  podcasts: PodcastTableProps[];
-}) {
+export default function PodcastTable({ episodes }: { episodes: Result[] }) {
   return (
     <section className={styles.section}>
       <div className={cn(styles.card, "card")}>
-        <h3 className={styles.title}>Episodes: {podcasts.length ?? 0}</h3>
+        <h3 className={styles.title}>Episodes: {episodes?.length ?? 0}</h3>
       </div>
       <div className={cn(styles.card, "card")}>
         <table className={styles.table}>
@@ -30,13 +20,21 @@ export default function PodcastTable({
           </thead>
           <tbody>
             {/* I use index as key because is a static list (no order, no delete, no add...) */}
-            {podcasts.map((episode, index) => (
+            {episodes?.map((episode, index) => (
               <tr key={index}>
                 <td>
-                  <Link to={`episode/${episode.id}`}>{episode.title}</Link>
+                  <Link to={`episode/${episode?.trackId}`}>
+                    {episode?.trackName}
+                  </Link>
                 </td>
-                <td>{episode.date}</td>
-                <td>{episode.duration}</td>
+                <td>
+                  {dateFormatter.format(new Date(episode?.releaseDate ?? 0))}
+                </td>
+                <td>
+                  {timeFormatter.format(
+                    new Date(episode?.trackTimeMillis ?? 0)
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>

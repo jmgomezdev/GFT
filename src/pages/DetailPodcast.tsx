@@ -1,21 +1,17 @@
-import { results } from "@/api/podcastDetail/mock.json";
-import { feed } from "@/api/podcastList/mock.json";
-import { PodcastTable } from "@/components/PodcastTable";
+import {
+  CORS_FETCH_PODCAST_LIST,
+  KEY_PODCAST_LIST,
+  URL_PODCAST_LIST,
+} from "@/api/podcastList/api";
+import { PodcastList } from "@/api/podcastList/types";
 import { Profile } from "@/components/Profile";
-import { dateFormatter, timeFormatter } from "@/lib/utils";
+import useGetData from "@/hooks/useGetData";
 import { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Outlet, useNavigate, useParams } from "react-router-dom";
 import { z } from "zod";
 
-const podcastsList = results.map((podcast) => ({
-  id: podcast.trackId,
-  title: podcast.trackName,
-  date: dateFormatter.format(new Date(podcast.releaseDate)),
-  duration: timeFormatter.format(new Date(podcast.trackTimeMillis)),
-}));
-
 export default function DetailPodcast() {
-  const { podcastId } = useParams();
+  const { podcastId, episodeId } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,15 +21,34 @@ export default function DetailPodcast() {
     }
   }, [navigate, podcastId]);
 
+  const { value: podcast, loading: loadingPodcast } = useGetData<PodcastList>(
+    KEY_PODCAST_LIST,
+    URL_PODCAST_LIST,
+    CORS_FETCH_PODCAST_LIST
+  );
+
+  if (loadingPodcast) {
+    return <span>Loading...</span>;
+  }
+
+  const dataPocast = podcast?.feed?.entry.find(
+    (podcast) => podcast.id.attributes["im:id"] === podcastId
+  );
+  if (!dataPocast) {
+    navigate("/404", { replace: true });
+    return null;
+  }
+
   return (
     <div className="m-auto flex w-full flex-wrap items-start gap-8 lg:flex-nowrap">
       <Profile
-        author={feed.entry[0]["im:artist"].label}
-        description={feed.entry[0].summary.label}
-        img={feed.entry[0]["im:image"][2].label}
-        title={feed.entry[0]["im:name"].label}
+        author={dataPocast?.["im:artist"].label}
+        description={dataPocast?.summary.label}
+        img={dataPocast?.["im:image"][2].label}
+        title={dataPocast?.["im:name"].label}
+        url={episodeId ? `/podcast/${podcastId}` : ""}
       />
-      <PodcastTable podcasts={podcastsList} />
+      <Outlet />
     </div>
   );
 }

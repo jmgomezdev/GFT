@@ -15,7 +15,7 @@ export default function SearchInput({ placeholder, setSearch }: Props) {
     }
     debounceRef.current = setTimeout(() => {
       setSearch(event.target.value);
-    }, 300);
+    }, 250);
   };
 
   return (
