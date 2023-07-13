@@ -20,7 +20,7 @@ export default function Episode({
       <div className={styles.description}>
         {parse(DOMPurify.sanitize(description))}
       </div>
-      <audio controls className={styles.audio}>
+      <audio data-testid="audio-player" controls className={styles.audio}>
         <source src={url} />
       </audio>
     </section>
