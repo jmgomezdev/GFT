@@ -1,17 +1,22 @@
 module.exports = {
-  env: { node: true, browser: true, es2021: true },
+  env: { node: true, browser: true, es2021: true, "vitest-globals/env": true },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
+    "plugin:vitest-globals/recommended",
     "plugin:react-hooks/recommended",
     "plugin:tailwindcss/recommended",
     "prettier",
   ],
   parser: "@typescript-eslint/parser",
-  parserOptions: { ecmaVersion: "latest", sourceType: "module" },
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: "./tsconfig.json",
+  },
   plugins: ["react-refresh"],
   settings: {
     tailwindcss: {
@@ -150,6 +155,7 @@ module.exports = {
       },
     ],
     "getter-return": "warn",
+    "react/react-in-jsx-scope": 0,
     "react/jsx-no-comment-textnodes": "warn",
     "react/jsx-no-duplicate-props": "warn",
     "react/jsx-no-target-blank": "warn",
@@ -162,5 +168,6 @@ module.exports = {
       },
     ],
     "jsx-a11y/media-has-caption": "warn",
+    "@typescript-eslint/ban-ts-comment": 0,
   },
 };
