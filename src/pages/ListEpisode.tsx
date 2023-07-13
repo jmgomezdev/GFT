@@ -20,5 +20,12 @@ export default function ListEpisode() {
     return <span>Loading...</span>;
   }
 
-  return <PodcastTable episodes={episodes?.results} />;
+  const episodesData =
+    episodes?.results?.map((episode) => ({
+      id: episode.trackId,
+      title: episode.trackName,
+      date: episode.releaseDate,
+      duration: episode.trackTimeMillis,
+    })) ?? [];
+  return <PodcastTable episodes={episodesData} />;
 }

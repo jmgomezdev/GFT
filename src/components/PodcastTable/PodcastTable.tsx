@@ -3,7 +3,18 @@ import { cn, dateFormatter, timeFormatter } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import styles from "./PodcastTable.module.css";
 
-export default function PodcastTable({ episodes }: { episodes: Result[] }) {
+type EpisodesType = {
+  id: number;
+  title: string;
+  date: string;
+  duration: number;
+};
+
+export default function PodcastTable({
+  episodes,
+}: {
+  episodes: EpisodesType[];
+}) {
   return (
     <section className={styles.section}>
       <div className={cn(styles.card, "card")}>
@@ -23,17 +34,11 @@ export default function PodcastTable({ episodes }: { episodes: Result[] }) {
             {episodes?.map((episode, index) => (
               <tr key={index}>
                 <td>
-                  <Link to={`episode/${episode?.trackId}`}>
-                    {episode?.trackName}
-                  </Link>
+                  <Link to={`episode/${episode?.id}`}>{episode?.title}</Link>
                 </td>
+                <td>{dateFormatter.format(new Date(episode?.date ?? 0))}</td>
                 <td>
-                  {dateFormatter.format(new Date(episode?.releaseDate ?? 0))}
-                </td>
-                <td>
-                  {timeFormatter.format(
-                    new Date(episode?.trackTimeMillis ?? 0)
-                  )}
+                  {timeFormatter.format(new Date(episode?.duration ?? 0))}
                 </td>
               </tr>
             ))}
