@@ -1,5 +1,4 @@
 import {
-  CORS_FETCH_PODCAST_DETAIL,
   KEY_PODCAST_DETAIL,
   URL_PODCAST_DETAIL,
 } from "@/api/podcastDetail/api";
@@ -24,8 +23,7 @@ export default function DetailEpisode() {
   const { value: episodes, loading: loadingEpisodes } =
     useGetData<PodcastDetail>(
       `${KEY_PODCAST_DETAIL}_${podcastId}`,
-      `${URL_PODCAST_DETAIL}&id=${podcastId}`,
-      CORS_FETCH_PODCAST_DETAIL
+      `${URL_PODCAST_DETAIL}&id=${podcastId}`
     );
   if (loadingEpisodes) {
     return <span>Loading...</span>;

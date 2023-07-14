@@ -19,17 +19,9 @@ function dateAddDays(date: Date, days: number): Date {
   return newDate;
 }
 
-const HEADERS_CORS = {
-  "Content-Type": "application/json",
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers":
-    "POST, GET, PUT, PATCH, DELETE, OPTIONS, HEAD",
-};
-
 export default function useGetData<T>(
   key: string,
-  url: string,
-  cors = false
+  url: string
 ): { loading: boolean; value: T } {
   const [loading, setLoading] = useState(false);
   const [value, setValue] = useState(() => getDataLocalStorage(key));
@@ -39,14 +31,16 @@ export default function useGetData<T>(
     const controller = new AbortController();
     const signal = controller.signal;
     async function fetchUsers() {
+      setLoading(true);
       try {
-        setLoading(true);
-        const res = await axios.get(url, {
-          // Hack to avoid CORS itunes
-          headers: cors ? HEADERS_CORS : {},
-          signal,
-        });
-        const data = await res.data;
+        const res = await axios.get(
+          `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
+          {
+            signal,
+          }
+        );
+        const allOriginsReturn = await res.data;
+        const data = JSON.parse(allOriginsReturn.contents);
         //TODO: Validate data with zod
         localStorage.setItem(key, JSON.stringify(data));
         localStorage.setItem(
@@ -54,10 +48,11 @@ export default function useGetData<T>(
           JSON.stringify(dateAddDays(new Date(), 1))
         );
         setValue(data);
+        setLoading(false);
       } catch (err) {
-        console.error(err, "Error fetching data from API");
+        console.error("Error fetching data from API");
+        setLoading(false);
       }
-      setLoading(false);
     }
     if (new Date() > new Date(cacheDate.current)) {
       fetchUsers();
@@ -65,7 +60,7 @@ export default function useGetData<T>(
     return () => {
       controller.abort();
     };
-  }, [url, key, cors, cacheDate]);
+  }, [url, key, cacheDate]);
 
   return { loading, value };
 }

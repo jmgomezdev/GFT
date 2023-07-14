@@ -1,8 +1,4 @@
-import {
-  CORS_FETCH_PODCAST_LIST,
-  KEY_PODCAST_LIST,
-  URL_PODCAST_LIST,
-} from "@/api/podcastList/api";
+import { KEY_PODCAST_LIST, URL_PODCAST_LIST } from "@/api/podcastList/api";
 import { PodcastList } from "@/api/podcastList/types";
 import { Profile } from "@/components/Profile";
 import useGetData from "@/hooks/useGetData";
@@ -23,8 +19,7 @@ export default function DetailPodcast() {
 
   const { value: podcast, loading: loadingPodcast } = useGetData<PodcastList>(
     KEY_PODCAST_LIST,
-    URL_PODCAST_LIST,
-    CORS_FETCH_PODCAST_LIST
+    URL_PODCAST_LIST
   );
 
   if (loadingPodcast) {
