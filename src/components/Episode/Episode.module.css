@@ -9,6 +9,11 @@
 .description {
   @apply text-sm font-light leading-loose md:leading-relaxed  lg:text-base;
 }
+.description pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 
 .audio {
   width: 100%;

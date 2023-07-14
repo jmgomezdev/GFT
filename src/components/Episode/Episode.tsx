@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn, isHTML } from "@/lib/utils";
 import DOMPurify from "dompurify";
 import parse from "html-react-parser";
 import styles from "./Episode.module.css";
@@ -18,7 +18,11 @@ export default function Episode({
     <section className={cn(styles.card, "card")}>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.description}>
-        {parse(DOMPurify.sanitize(description))}
+        {isHTML(description) ? (
+          parse(DOMPurify.sanitize(description))
+        ) : (
+          <pre>{description}</pre>
+        )}
       </div>
       <audio data-testid="audio-player" controls className={styles.audio}>
         <source src={url} />

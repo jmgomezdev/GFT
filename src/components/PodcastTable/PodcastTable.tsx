@@ -1,4 +1,3 @@
-import { Result } from "@/api/podcastDetail/types";
 import { cn, dateFormatter, timeFormatter } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import styles from "./PodcastTable.module.css";

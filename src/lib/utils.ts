@@ -15,3 +15,5 @@ export const dateFormatter = new Intl.DateTimeFormat("es-ES", {
   day: "2-digit",
   year: "numeric",
 });
+
+export const isHTML = (str: string) => /<("[^"]*"|'[^']*'|[^'">])*>/.test(str);
