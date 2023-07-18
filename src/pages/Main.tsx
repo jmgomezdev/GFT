@@ -1,4 +1,4 @@
-import { KEY_PODCAST_LIST, URL_PODCAST_LIST } from "@/api/podcastList/api";
+import { getPodcastsList, KEY_PODCAST_LIST } from "@/api/podcastList/api";
 import { PodcastList } from "@/api/podcastList/types";
 import { Badge } from "@/components/Badge";
 import { PodcastItem } from "@/components/PodcastItem";
@@ -8,10 +8,10 @@ import { sameText } from "@/lib/sameText";
 import { useState } from "react";
 
 export default function Main() {
-  const { value: data, loading } = useGetData<PodcastList>(
-    KEY_PODCAST_LIST,
-    URL_PODCAST_LIST
-  );
+  const { value: data, loading } = useGetData<PodcastList>({
+    key: KEY_PODCAST_LIST,
+    fn: getPodcastsList,
+  });
   const [search, setSearch] = useState("");
 
   let podcasts = data?.feed?.entry ?? [];

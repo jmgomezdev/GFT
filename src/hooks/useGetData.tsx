@@ -1,5 +1,10 @@
-import axios from "axios";
 import { useEffect, useRef, useState } from "react";
+
+type useGetDataProps = {
+  key: string;
+  fn: CallableFunction;
+  args?: object;
+};
 
 function getDataLocalStorage(key: string) {
   try {
@@ -19,10 +24,10 @@ function dateAddDays(date: Date, days: number): Date {
   return newDate;
 }
 
-export default function useGetData<T>(
-  key: string,
-  url: string
-): { loading: boolean; value: T } {
+export default function useGetData<T>({ key, fn, args }: useGetDataProps): {
+  loading: boolean;
+  value: T;
+} {
   const [loading, setLoading] = useState(false);
   const [value, setValue] = useState(() => getDataLocalStorage(key));
   const cacheDate = useRef(getDataLocalStorage(`${key}_cacheDate`));
@@ -30,39 +35,28 @@ export default function useGetData<T>(
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
-    async function fetchUsers() {
-      setLoading(true);
-      try {
-        const res = await axios.get(
-          `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
-          {
-            signal,
-          }
-        );
-        const allOriginsReturn = await res.data;
-        const data = JSON.parse(allOriginsReturn.contents);
-        //TODO: Validate data with zod
-        localStorage.setItem(key, JSON.stringify(data));
-        localStorage.setItem(
-          `${key}_cacheDate`,
-          JSON.stringify(dateAddDays(new Date(), 1))
-        );
-        setValue(data);
-        setLoading(false);
-      } catch (err) {
-        console.error("Error fetching data from API");
-        if (!signal.aborted) {
-          setLoading(false);
-        }
-      }
-    }
     if (new Date() > new Date(cacheDate.current)) {
-      fetchUsers();
+      setLoading(true);
+      fn({ ...args, signal })
+        .then((data: T) => {
+          localStorage.setItem(key, JSON.stringify(data));
+          localStorage.setItem(
+            `${key}_cacheDate`,
+            JSON.stringify(dateAddDays(new Date(), 1))
+          );
+          setValue(data);
+          setLoading(false);
+        })
+        .catch(() => {
+          if (!signal.aborted) {
+            setLoading(false);
+          }
+        });
     }
     return () => {
       controller.abort();
     };
-  }, [url, key, cacheDate]);
+  }, [fn, key, cacheDate]);
 
   return { loading, value };
 }

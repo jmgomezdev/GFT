@@ -1,4 +1,4 @@
-import { KEY_PODCAST_LIST, URL_PODCAST_LIST } from "@/api/podcastList/api";
+import { getPodcastsList, KEY_PODCAST_LIST } from "@/api/podcastList/api";
 import { PodcastList } from "@/api/podcastList/types";
 import { Profile } from "@/components/Profile";
 import useGetData from "@/hooks/useGetData";
@@ -17,10 +17,10 @@ export default function DetailPodcast() {
     }
   }, [navigate, podcastId]);
 
-  const { value: podcast, loading: loadingPodcast } = useGetData<PodcastList>(
-    KEY_PODCAST_LIST,
-    URL_PODCAST_LIST
-  );
+  const { value: podcast, loading: loadingPodcast } = useGetData<PodcastList>({
+    key: KEY_PODCAST_LIST,
+    fn: getPodcastsList,
+  });
 
   if (loadingPodcast) {
     return <span>Loading...</span>;
