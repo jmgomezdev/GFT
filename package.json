@@ -29,7 +29,6 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
-    "@testing-library/react-hooks": "^8.0.1",
     "@types/dompurify": "^3.0.2",
     "@types/node": "^20.4.0",
     "@types/react": "^18.2.14",
