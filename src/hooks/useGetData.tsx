@@ -51,7 +51,9 @@ export default function useGetData<T>(
         setLoading(false);
       } catch (err) {
         console.error("Error fetching data from API");
-        setLoading(false);
+        if (!signal.aborted) {
+          setLoading(false);
+        }
       }
     }
     if (new Date() > new Date(cacheDate.current)) {
